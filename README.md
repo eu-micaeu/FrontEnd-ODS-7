@@ -5,5 +5,5 @@
 
 ## - Henrique Bezerra Lucas
 ## - Marcos Vinicius Bueno Prestes
-## - Micael Ribeiro ROcha
+## - Micael Ribeiro Rocha
 
