@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace;
+}
+
+.centraliza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .centraliza{
+    margin-top: 35vh;
+}
