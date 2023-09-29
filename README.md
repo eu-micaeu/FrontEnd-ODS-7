@@ -1,5 +1,8 @@
+<div align="center">
+
 # FrontEnd-ODS-7
-<hr>
+
+<img src="images/ods.png">
 
 # Alunos:
 
@@ -7,3 +10,4 @@
 ## - Marcos Vinicius Bueno Prestes
 ## - Micael Ribeiro Rocha
 
+</div>
