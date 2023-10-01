@@ -3,14 +3,33 @@ body {
     background-image: url(../images/background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     font-family: monospace;
 }
 
-#odsImagem{
-    margin: 5px;
+/* Gerais */
+
+h1{
+    margin: 0 auto;
 }
 
+li {
+    list-style-type: none;
+}
+
+label{
+    font-size: 15px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+/*   Header/Cabeçalho  */
+#logo{
+    margin: 5px;
+
+}
+/*Definição de cor de fundo, formato e posicionamento*/
 header{
     background-color: black;
     border-radius: 0 0 10px 10px;
@@ -20,46 +39,34 @@ header{
     top: 0;
 }
 
+/*Organizar de Header em linha*/
+header .centraliza{
+    flex-direction:row;
+}
+/*Organização dos itens do menu inicial*/
+nav ul{
+    position:static;
+    height: auto;
+    background-color: transparent;
+}
+nav ul li{
+    float: left; /* Disposição dos itens*/  
+    border: 0
+}
+/*Display para alinhar os itens no centro em coluna*/
 .centraliza {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-header .centraliza{
-    flex-direction: row;
-}
-
-h1{
-    margin: 0 auto;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 204, 0);
-    border-top: 3px solid black;
-}
-
-li {
-    list-style-type: none;
-}
-
-main {
-    margin-bottom: 10vh;
-    margin-top: 20vh;
-}
-
+/*Aplicando a todos os textos que usem a classe "centraliza" */
 .centraliza p {
     width: 40%;
     font-size: 15px;
     font-weight: bold;
 }
-
-button {
+.Botao{
     padding: 20px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
@@ -70,7 +77,7 @@ button {
     margin: 5px;
 }
 
-button:hover {
+.Botao:hover {
     padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
@@ -79,15 +86,34 @@ button:hover {
     color: black;
     font-weight: bold;
 }
-
-#github {
-    margin: 10px;
+ /*  Main */
+main {
+    margin-bottom: 10vh;
+    margin-top: 20vh;
 }
 
 main img{
     border-radius: 10px;
     border: 2px solid black;
 }
+
+/* Rodapé */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 204, 0);
+    border-top: 3px solid black;
+}
+
+
+#github {
+    margin: 10px;
+}
+
+/*Classe para estilização dos cartões*/
 
 .cartao{
     width: 40%;
@@ -98,10 +124,4 @@ main img{
     border-radius: 10px;
     margin: 15px;
     padding: 10px;                       
-}
-
-label{
-    font-size: 15px;
-    margin: 10px;
-    font-weight: bold;
 }

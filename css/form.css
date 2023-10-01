@@ -3,11 +3,10 @@
 main h3{
     font-size: 20px;
 }
-
+/*Definindo estilo dos campos do formulário*/
 input{
     padding: 20px;
     border-radius: 10px;
     border: 2px solid black;
     font-size: 15px;
-    font-family: monospace;
 }
