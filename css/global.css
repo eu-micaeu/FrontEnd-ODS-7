@@ -23,12 +23,6 @@ label{
     font-weight: bold;
 }
 
-
-/*   Header/Cabeçalho  */
-#logo{
-    margin: 5px;
-
-}
 /*Definição de cor de fundo, formato e posicionamento*/
 header{
     background-color: black;
@@ -43,16 +37,12 @@ header{
 header .centraliza{
     flex-direction:row;
 }
-/*Organização dos itens do menu inicial*/
-nav ul{
-    position:static;
-    height: auto;
-    background-color: transparent;
-}
+
 nav ul li{
     float: left; /* Disposição dos itens*/  
-    border: 0
 }
+
+
 /*Display para alinhar os itens no centro em coluna*/
 .centraliza {
     display: flex;
@@ -66,7 +56,7 @@ nav ul li{
     font-size: 15px;
     font-weight: bold;
 }
-.Botao{
+.botao{
     padding: 20px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
@@ -74,10 +64,10 @@ nav ul li{
     background-color: black;
     color: white;
     font-weight: bold;
-    margin: 5px;
+    margin: 20px 10px;
 }
 
-.Botao:hover {
+.botao:hover {
     padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
@@ -86,15 +76,23 @@ nav ul li{
     color: black;
     font-weight: bold;
 }
+
  /*  Main */
 main {
     margin-bottom: 10vh;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 main img{
     border-radius: 10px;
     border: 2px solid black;
+}
+
+#odsImagem{
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 /* Rodapé */

@@ -1,2 +1,5 @@
 @import url('./global.css');
 
+.centraliza h1{
+    margin-top: 5vh;
+}
