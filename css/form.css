@@ -1,12 +1,38 @@
 @import url('./global.css');
 
+main{
+    margin-top: 13vh;
+    margin-bottom: 5vh;
+}
+
 main h3{
     font-size: 20px;
 }
-/*Definindo estilo dos campos do formulário*/
+
+label{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+}
+
 input{
     padding: 20px;
     border-radius: 10px;
     border: 2px solid black;
+    font-size: 14px;
+}
+
+#submeter{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    text-decoration: none;
     font-size: 15px;
+    color: white;
+    border-radius: 15px;
+}
+
+#submeter:hover{
+    color: rgb(87, 87, 87);
 }

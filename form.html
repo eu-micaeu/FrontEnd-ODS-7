@@ -1,62 +1,113 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ODS 7 - Formulário</title>
+
     <link rel="stylesheet" href="css/form.css">
-    <link rel="icon" href="\images\raio.png" type="image/x-icon">
+
+    <link rel="icon" href="images/raio.png" type="image/x-icon">
+
 </head>
 
 <body>
-    <header>
-        
-    <!-- Cabeçalho, 2 imagens e menu inicial--> 
+
+    <header><!-- Cabeçalho, 2 imagens e menu inicial-->
+
         <div class="centraliza">
-            
+
             <nav>
+
                 <ul>
-                    <li><a href="index.html"><button class="botao">Início</button></a> </li>
-                    <li><a href="form.html"><button class="botao">Formulário</button></a> </li>
-                    <li><img id="odsImagem" src="images/ods.png" width="100px" height="100px"> </li>
-                    <li><a href="energias.html"><button class="botao">Energias limpas</button></a></li>
-                    <li><a href="desenvolvedores.html"><button class="botao">Sobre</button></a></li>
+
+                    <li>
+
+                        <a href="index.html" class="botao"> Início </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="form.html" class="botao"> Formulário</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="energias.html" class="botao"> Energias limpas </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="desenvolvedores.html" class="botao"> Desenvolvedores </a>
+
+                    </li>
+
                 </ul>
+
             </nav>
 
         </div>
+
     </header>
+
     <!-- Formulário de preenchimento -->
     <main>
 
         <div class="centraliza">
+            
             <h1>Formulário</h1>
+
             <label for="nome">Nome:</label>
+
             <input id="nome" type="text">
+
             <label>Telefone:</label>
+
             <input type="tel">
+
             <label>E-mail:</label>
+
             <input type="email">
+
             <label>Idade:</label>
+
             <input type="number">
+
             <label>Instituição que estuda:</label>
+
             <input type="text">
+
             <br>
+
             <h3>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</h3>
-            <a href="https://www.ipea.gov.br/ods/ods7.html" target="_blank"><button class="botao">Submeter</button></a>
+
+            <a href="https://www.ipea.gov.br/ods/ods7.html"  id="submeter" target="_blank">Submeter</a>
 
         </div>
+
     </main>
     
     <!-- Rodapé -->
     <footer>
+
         <div class="centraliza">
+
             <h3>@Copyright2023</h3>
-            <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"><img id="github" src="images/github.png" width="30px"
-                    height="30px"></a>
+
+            <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"><img id="github" src="images/github.png" width="30" height="30" alt="GitHub"></a>
+
         </div>
+
     </footer>
+
 </body>
 
 </html>

@@ -1,47 +1,62 @@
+/* Formação do corpo da página no geral */
+
+/**/
 body {
     margin: 0;
     background-image: url(../images/background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     font-family: monospace;
 }
+/**/
 
-/* Gerais */
+/* Formação do cabeçalho do site*/
 
-h1{
-    margin: 0 auto;
-}
-
-li {
-    list-style-type: none;
-}
-
-label{
-    font-size: 15px;
-    margin: 10px;
-    font-weight: bold;
-}
-
-/*Definição de cor de fundo, formato e posicionamento*/
-header{
+/**/
+header {
     background-color: black;
     border-radius: 0 0 10px 10px;
     border-bottom: 2px solid white;
     width: 100%;
+    height: auto;
     position: fixed;
     top: 0;
 }
 
-/*Organizar de Header em linha*/
-header .centraliza{
-    flex-direction:row;
+header nav {
+    margin-bottom: 15px;
 }
 
-nav ul li{
-    float: left; /* Disposição dos itens*/  
+header ul {
+    padding: 0;
 }
 
+header li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(87, 87, 87);
+}
+/**/
 
 /*Display para alinhar os itens no centro em coluna*/
 .centraliza {
@@ -50,76 +65,43 @@ nav ul li{
     align-items: center;
     flex-direction: column;
 }
+
 /*Aplicando a todos os textos que usem a classe "centraliza" */
 .centraliza p {
     width: 40%;
     font-size: 15px;
     font-weight: bold;
 }
-.botao{
-    padding: 20px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    font-family: monospace;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin: 20px 10px;
-}
 
-.botao:hover {
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-family: monospace;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    font-weight: bold;
-}
-
- /*  Main */
-main {
-    margin-bottom: 10vh;
-    margin-top: 10vh;
-}
-
-main img{
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-#odsImagem{
+#odsImagem {
     border: 2px solid white;
-    background-color: transparent;
+    background-color: black;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 15px;
+}
+
+/*Classe para estilização dos cartões*/
+
+.cartao {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
 }
 
 /* Rodapé */
 
 footer {
-    position: relative;
-    bottom: 0;
     width: 100%;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 204, 0);
     border-top: 3px solid black;
 }
 
-
 #github {
     margin: 10px;
-}
-
-/*Classe para estilização dos cartões*/
-
-.cartao{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;    
-    border: 2px solid black;          
-    border-radius: 10px;
-    margin: 15px;
-    padding: 10px;                       
 }
