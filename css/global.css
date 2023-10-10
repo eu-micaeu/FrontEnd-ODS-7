@@ -1,107 +1,206 @@
 /* Formação do corpo da página no geral */
 
 /**/
+
 body {
-    margin: 0;
-    background-image: url(../images/background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: monospace;
+
+    margin: 0; /* Retirando a margin padrão do body */
+
+    background-image: url(../images/background.jpg); /* Colocando uma imagem de fundo */
+
+    background-attachment: fixed; /* Deixando a imagem fixa */
+
+    background-repeat: no-repeat; /* Impedindo a repetição da imagem */
+
+    background-size: cover; /* "Cobrindo" todo o body */
+
+    font-family: monospace; /* Definindo uma fonte para as páginas */
+
 }
+
 /**/
 
 /* Formação do cabeçalho do site*/
 
 /**/
+
 header {
-    background-color: black;
-    border-radius: 0 0 10px 10px;
-    border-bottom: 2px solid white;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
+
+    background-color: black; /* Definindo a cor preta para o background do header */
+
+    border-radius: 0 0 10px 10px; /* Definindo uma borda arredondada para o header */
+
+    border-bottom: 2px solid white; /* Definindo uma borda, tipo, grossura e cor */
+
+    width: 100%; /* Definindo o comprimento do header */
+
+    height: auto; /* Definindo a altura como automática no header */
+
+    position: fixed; /* Deixando o header fixado */
+
+    top: 0; /* Retirando o espaçamento topo do header */
+
 }
 
 header nav {
-    margin-bottom: 15px;
+
+    margin-bottom: 15px; /* Deixando um espaço maior de baixo dos botões */
+
 }
 
 header ul {
-    padding: 0;
+
+    padding: 0; /* Retirando o padding automático da tag <ul> para uma melhor centralização */
+
 }
 
 header li {
+
     list-style-type: none;
+
     margin-bottom: 10px;
-    padding: 5px;
+
     border: 2px solid white;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     float: left;
+
     width: 140px;
+
     height: 50px;
+
     margin: 5px;
+
     border-radius: 15px;
+
 }
 
 header a {
+
     text-decoration: none;
+
     font-size: 15px;
+
     color: white;
+
 }
 
 header a:hover{
+
     color: rgb(87, 87, 87);
+
 }
+
 /**/
 
 /*Display para alinhar os itens no centro em coluna*/
+
+/**/
+
 .centraliza {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-direction: column;
+
 }
+
+/**/
 
 /*Aplicando a todos os textos que usem a classe "centraliza" */
+
+/**/
+
 .centraliza p {
+
     width: 40%;
+
     font-size: 15px;
+
     font-weight: bold;
+
 }
+/**/
+
+/* Imagem que representa a ODS 7 */
+
+/**/
 
 #odsImagem {
+
     border: 2px solid white;
+
     background-color: black;
+
     border-radius: 10px;
+
     margin: 15px;
+
 }
+
+/**/
 
 /*Classe para estilização dos cartões*/
 
+/**/
+
 .cartao {
+
     width: 40%;
+
     display: flex;
+
     align-items: center;
+
     flex-direction: column;
+
     border: 2px solid black;
+
     border-radius: 10px;
+
     margin: 15px;
+
     padding: 10px;
+
 }
+
+/**/
 
 /* Rodapé */
 
+/**/
+
 footer {
+
     width: 100%;
+
     color: rgb(0, 0, 0);
+    
     background-color: rgb(255, 204, 0);
+
     border-top: 3px solid black;
+
 }
 
+/**/
+
+/* Imagem que representa onde ficará o repositório do projeto no GitHub */
+
+/**/
+
 #github {
+
     margin: 10px;
+
 }
+
+/**/
