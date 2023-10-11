@@ -1,18 +1,5 @@
 @import url('./global.css');
 
-main{
-    margin: 100px 0px;
-}
-
-p{
-    text-align: center;
-    width: 80vw;
-}
-
-/* Imagem que representa a ODS 7 */
-
-/**/
-
 #odsImagem {
 
     border: 2px solid white;
@@ -24,5 +11,3 @@ p{
     margin: 15px;
 
 }
-
-/**/

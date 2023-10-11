@@ -1,7 +1,3 @@
-/* Formação do corpo da página no geral */
-
-/**/
-
 body {
 
     margin: 0; /* Retirando a margin padrão do body */
@@ -17,12 +13,6 @@ body {
     font-family: monospace; /* Definindo uma fonte para as páginas */
 
 }
-
-/**/
-
-/* Formação do cabeçalho do site*/
-
-/**/
 
 header {
 
@@ -40,20 +30,15 @@ header {
 
     top: 0; /* Retirando o espaçamento topo do header */
 
-
-
-
 }
 
 header ul {
 
     padding: 0; /* Retirando o padding automático da tag <ul> para uma melhor centralização */
 
-    display: flex;
+    display: flex; /* Deixando a tag <ul> com o display flexivél */
 
-    align-items: center;
-
-    justify-content: center;
+    align-items: center; /* Alinhando os itens da tag <ul> */
 
 }
 
@@ -63,79 +48,67 @@ header li {
 
 }
 
-header a {
+header a { 
 
-    display: flex;
+    display: flex; /* Deixando a tag <a> com o display flexivél */
 
-    align-items: center;
+    align-items: center; /* Alinhando de forma horizontal, os itens da tag <a> */
 
-    justify-content: center;
+    justify-content: center; /* Alinhando de forma vertical, os itens da tag <a> */
 
-    text-decoration: none;
+    text-decoration: none; /* Retirando o sublinhado padrão da tag <a> */
 
-    font-size: 12px;
+    font-size: 12px; /* Definindo o tamanho da font */
 
-    color: white;
+    color: white; /* Definindo a cor da font */
 
-    width: 18vw;
+    width: 18vw; /* Definindo o comprimento da tag <a> */
 
-    height: 50px;
+    height: 50px; /* Definindo a altura da tag <a> */
 
-    margin: 4px;
+    margin: 4px; /* Dando um espaçamento entre as tags <a> */
 
-    border-radius: 15px;
+    border-radius: 15px; /* Deixando as bordas arrendondadas das tags <a> */
 
-    margin-bottom: 10px;
-
-    border: 2px solid white;
-
-
+    border: 2px solid white; /* Definindo a cor, espressura e tipo da borda das tags <a> */
 
 }
 
 header a:hover{
 
-    background-color: white;
+    background-color: white; /* Definindo a cor de fundo das tags <a> quando passar o mouse por cima*/
 
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); /* Definindo a cor das tags <a> quando passar o mouse por cima*/
 
 }
 
-/**/
-
-/*Display para alinhar os itens no centro em coluna*/
-
-/**/
+main{
+    margin: 100px 0px;
+}
 
 .centraliza {
 
-    display: flex;
+    display: flex; 
 
     align-items: center;
 
     flex-direction: column;
 
+    justify-content: center;
+
 }
 
-/**/
-
-/*Aplicando a todos os textos que usem a classe "centraliza" */
-
-/**/
-
-.centraliza p {
+p {
 
     font-size: 15px;
 
     font-weight: bold;
 
+    text-align: center;
+
+    width: 40vw;
+
 }
-
-/**/
-
-/*Classe para estilização dos cartões*/
-
-/**/
 
 .cartao {
 
@@ -151,17 +124,11 @@ header a:hover{
 
     border-radius: 50px;
 
-    margin: 15px;
+    margin: 5px;
 
     padding: 45px;
 
 }
-
-/**/
-
-/* Rodapé */
-
-/**/
 
 footer {
 
@@ -177,16 +144,8 @@ footer {
 
 }
 
-/**/
-
-/* Imagem que representa onde ficará o repositório do projeto no GitHub */
-
-/**/
-
 #github {
 
     margin: 10px;
 
 }
-
-/**/

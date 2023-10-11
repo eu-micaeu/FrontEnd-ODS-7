@@ -1,46 +1,55 @@
 @import url('./global.css');
 
-main{
-    margin-top: 100px;
-    margin-bottom: 5vh;
-}
-
-main h3{
-    font-size: 20px;
-    text-align: center;
-}
-
-h1{
-    text-decoration: underline;
-}
-
 label{
+
     font-size: 25px;
+
     margin: 10px;
+
     font-weight: bold;
+
 }
 
 input{
+
     padding: 10px;
+
     border-radius: 10px;
+
     border: 2px solid black;
+
     font-size: 18px;
+
     font-family: Arial, Helvetica, sans-serif;
+
     text-align: center;
+
 }
 
 #submeter{
+
     margin: 20px;
+
     padding: 20px;
+
     border: 2px solid white;
+
     background-color: black;
+
     text-decoration: none;
+
     font-size: 15px;
+
     color: white;
+
     border-radius: 15px;
+
 }
 
 #submeter:hover{
+
     color: rgb(0, 0, 0);
+
     background-color: white;
+    
 }
