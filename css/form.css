@@ -1,6 +1,18 @@
 @import url('./global.css');
 
-label{
+main form{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+    
+}
+
+main form label{
 
     font-size: 25px;
 
@@ -10,7 +22,7 @@ label{
 
 }
 
-input{
+main form input{
 
     padding: 10px;
 

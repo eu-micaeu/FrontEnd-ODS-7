@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8"> <!-- Encoding usado na página. -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garantir que o conteúdo se adapte bem a dispositivos de diferentes tamanhos e que a experiência do usuário seja otimizada. -->
 
     <title>ODS 7 - Formulário</title> <!-- Titulo da página. -->
 
@@ -18,7 +18,7 @@
 
 <body>
 
-    <header> <!-- Cabeçalho, 2 imagens e menu inicial. -->
+    <header> <!-- Cabeçalho e menu inicial. -->
 
         <nav> <!-- Menu com as opcões do header. -->
 
@@ -26,25 +26,25 @@
 
                 <li> <!-- Opção de início. -->
 
-                    <a href="index.html" class="botao"> Início </a>
+                    <a href="index.html" class="botao" title="Página inicial"> Início </a> <!-- Link para a página 'index.html'. -->
 
                 </li>
 
                 <li> <!-- Opção de formulário. -->
 
-                    <a href="form.html" class="botao"> Formulário </a>
+                    <a href="form.html" class="botao" title="Formulário do site"> Formulário </a> <!-- Link para a página 'form.html'. -->
 
                 </li>
 
                 <li> <!-- Opção de energias. -->
 
-                    <a href="energias.html" class="botao"> Energias </a>
+                    <a href="energias.html" class="botao" title="Tipos de energias"> Energias </a> <!-- Link para a página 'energias.html'. -->
 
                 </li>
 
                 <li> <!-- Opção de desenvolvedores. -->
 
-                    <a href="desenvolvedores.html" class="botao"> Devs. </a>
+                    <a href="desenvolvedores.html" class="botao" title="Desenvolvedores do projeto"> Devs. </a> <!-- Link para a página 'desenvolvedores.html'. -->
 
                 </li>
 
@@ -54,46 +54,50 @@
 
     </header>
 
-    <!-- Formulário de preenchimento -->
-    <main>
+    <main> <!-- Principal, preenchimento do formulário -->
 
-        <h1>Formulário</h1>
+        <h1>Formulário</h1> <!-- Titulo principal -->
 
-        <label for="nome">Nome:</label>
+        <form> <!-- Formulário -->
 
-        <input id="nome" type="text">
+            <label for="nome">Nome:</label> <!-- Rotúlo do nome -->
 
-        <label>Telefone:</label>
+            <input id="nome" type="text"> <!-- Input do nome -->
 
-        <input type="tel">
+            <label for="telefone">Telefone:</label> <!-- Rotúlo do telefone -->
 
-        <label>E-mail:</label>
+            <input id="telefone" type="tel"> <!-- Input do telefone -->
 
-        <input type="email">
+            <label for="telefone">E-mail:</label> <!-- Rotúlo do e-mail -->
 
-        <label>Idade:</label>
+            <input id="email" type="email"> <!-- Input do e-mail -->
 
-        <input type="number">
+            <label for="idade">Idade:</label> <!-- Rotúlo da idade -->
 
-        <label>Instituição que estuda:</label>
+            <input id="idade" type="number"> <!-- Input da idade -->
 
-        <input type="text">
+            <label for="instituicao">Instituição que estuda:</label> <!-- Rotúlo da instituição -->
 
-        <br>
+            <input id="instituicao" type="text"> <!-- Input da instituição -->
 
-        <h3>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</h3>
+        </form>
+
+        <p>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</p> <!-- Parágrafo -->
 
         <a href="https://www.ipea.gov.br/ods/ods7.html" id="submeter" target="_blank">Submeter</a>
+        <!-- Link para a página oficial da ODS7. -->
 
     </main>
 
-    <!-- Rodapé -->
-    <footer>
+    <footer> <!-- Rodapé -->
 
-        <h3>@Copyright2023</h3>
+        <h3>@Copyright2023</h3> <!-- Sub-titulo -->
 
-        <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"><img id="github" src="images/github.png" width="30"
-                height="30" alt="GitHub"></a>
+        <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"> <!-- Link para o repositório do projeto. -->
+
+            <img id="github" src="images/github.png" width="30" height="30" alt="GitHub"> <!-- Imagem do ícone do GitHub -->
+
+        </a>
 
     </footer>
 

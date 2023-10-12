@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8"> <!-- Encoding usado na página. -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garantir que o conteúdo se adapte bem a dispositivos de diferentes tamanhos e que a experiência do usuário seja otimizada. -->
 
     <title>ODS 7 - Energias Limpas</title> <!-- Titulo da página. -->
 
@@ -17,7 +17,7 @@
 
 <body>
 
-    <header> <!-- Cabeçalho, 2 imagens e menu inicial. -->
+    <header> <!-- Cabeçalho e menu inicial. -->
 
         <nav> <!-- Menu com as opcões do header. -->
 
@@ -25,25 +25,25 @@
 
                 <li> <!-- Opção de início. -->
 
-                    <a href="index.html" class="botao"> Início </a>
+                    <a href="index.html" class="botao" title="Página inicial"> Início </a> <!-- Link para a página 'index.html'. -->
 
                 </li>
 
                 <li> <!-- Opção de formulário. -->
 
-                    <a href="form.html" class="botao"> Formulário </a>
+                    <a href="form.html" class="botao" title="Formulário do site"> Formulário </a> <!-- Link para a página 'form.html'. -->
 
                 </li>
 
                 <li> <!-- Opção de energias. -->
 
-                    <a href="energias.html" class="botao"> Energias </a>
+                    <a href="energias.html" class="botao" title="Tipos de energias"> Energias </a> <!-- Link para a página 'energias.html'. -->
 
                 </li>
 
                 <li> <!-- Opção de desenvolvedores. -->
 
-                    <a href="desenvolvedores.html" class="botao"> Devs. </a>
+                    <a href="desenvolvedores.html" class="botao" title="Desenvolvedores do projeto"> Devs. </a> <!-- Link para a página 'desenvolvedores.html'. -->
 
                 </li>
 
@@ -53,16 +53,15 @@
 
     </header>
 
-    <!-- Principal, informações sobre tipo de energias criação de cartões-->
-    <main>
+    <main> <!-- Principal, informações sobre tipo de energias criação de cartões-->
 
-        <h1>Principais Energias Limpas</h1>
+        <h1>Principais Energias Limpas</h1> <!-- Titulo principal -->
 
         <div class="cartao">
 
-            <h3>Energias Eólica</h3>
+            <h3>Energias Eólica</h3> <!-- Sub-titulo -->
 
-            <img src="images/eolica.jpg" width="150" height="130" alt="Energia Eolica" class="imgDev">
+            <img src="images/eolica.jpg" width="150" height="130" alt="Energia Eolica" class="imgDev"> <!-- Imagem de uma usina eolica -->
 
             <p> <!-- Parágrafo -->
                 Energia eólica é a transformação da energia do vento em energia útil, tal como na utilização de
@@ -76,15 +75,15 @@
                 problemático do que o de outras fontes de energia.
             </p>
 
-            <a href="https://pt.wikipedia.org/wiki/Energia_eólica" target="_blank">Veja mais</a>
+            <a href="https://pt.wikipedia.org/wiki/Energia_eólica" target="_blank">Veja mais</a> <!-- Link para uma página do Wikipedia para uma explicação mais detalhada. -->
 
         </div>
 
         <div class="cartao">
 
-            <h3>Energias Nuclear</h3>
+            <h3>Energias Nuclear</h3> <!-- Sub-titulo -->
 
-            <img src="images/nuclear.webp" width="150" height="130" alt="Energia Nuclear" class="imgDev">
+            <img src="images/nuclear.webp" width="150" height="130" alt="Energia Nuclear" class="imgDev"> <!-- Imagem de uma usina nuclear -->
 
             <p> <!-- Parágrafo -->
                 Energia nuclear ou energia atômica é a energia liberada em uma reação nuclear, ou seja, em processos
@@ -93,17 +92,18 @@
                 capacidade
                 de se transformar em outros isótopos ou elementos por meio de reações nucleares, emitindo energia
                 durante esse processo. Baseia-se no princípio da equivalência massa-energia, proposto por Albert
-                Einstein, segundo a qual durante reações nucleares ocorre transformação de massa em energia.</p>
+                Einstein, segundo a qual durante reações nucleares ocorre transformação de massa em energia.
+            </p>
 
-            <a href="https://pt.wikipedia.org/wiki/Energia_nuclear" target="_blank">Veja mais</a>
+            <a href="https://pt.wikipedia.org/wiki/Energia_nuclear" target="_blank">Veja mais</a> <!-- Link para uma página do Wikipedia para uma explicação mais detalhada. -->
 
         </div>
 
         <div class="cartao">
 
-            <h3>Energia Hidráulica</h3>
+            <h3>Energia Hidráulica</h3> <!-- Sub-titulo -->
 
-            <img src="images/hidraulica.jpg" width="150" height="130" alt="Energia Hidraulica" class="imgDev">
+            <img src="images/hidraulica.jpg" width="150" height="130" alt="Energia Hidraulica" class="imgDev"> <!-- Imagem de uma usina hidraulica -->
 
             <p> <!-- Parágrafo -->
                 A energia hidráulica ou energia hídrica é a energia obtida a partir da energia potencial de uma massa
@@ -119,7 +119,7 @@
                 com a finalidade de prover energia elétrica para uma rede de energia.
             </p>
 
-            <a href="https://pt.wikipedia.org/wiki/Energia_hidráulica" target="_blank">Veja mais</a>
+            <a href="https://pt.wikipedia.org/wiki/Energia_hidráulica" target="_blank">Veja mais</a> <!-- Link para uma página do Wikipedia para uma explicação mais detalhada. -->
 
         </div>
 
@@ -127,10 +127,13 @@
 
     <footer> <!-- Rodapé -->
 
-        <h3>@Copyright2023</h3>
+        <h3>@Copyright2023</h3> <!-- Sub-titulo -->
 
-        <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"><img id="github" src="images/github.png" width="30"
-                height="30" alt="GitHub"></a>
+        <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"> <!-- Link para o repositório do projeto. -->
+
+            <img id="github" src="images/github.png" width="30" height="30" alt="GitHub"> <!-- Imagem do ícone do GitHub -->
+
+        </a>
 
     </footer>
 
