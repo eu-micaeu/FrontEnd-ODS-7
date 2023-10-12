@@ -32,6 +32,16 @@ header {
 
 }
 
+header nav{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
 header ul {
 
     padding: 0; /* Retirando o padding automático da tag <ul> para uma melhor centralização */
@@ -84,18 +94,14 @@ header a:hover{
 
 main{
     margin: 100px 0px;
-}
 
-.centraliza {
+    display: flex; /* Deixando a tag <main> com o display flexivél */
 
-    display: flex; 
+    align-items: center; /* Alinhando de forma horizontal, os itens da tag <main> */
 
-    align-items: center;
+    justify-content: center; /* Alinhando de forma vertical, os itens da tag <main> */
 
     flex-direction: column;
-
-    justify-content: center;
-
 }
 
 p {
@@ -111,8 +117,6 @@ p {
 }
 
 .cartao {
-
-    width: 40%;
 
     display: flex;
 
@@ -131,6 +135,14 @@ p {
 }
 
 footer {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
 
     width: 100%;
 

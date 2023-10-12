@@ -1,110 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Tipo de documento. -->
 
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Linguagem da página. -->
 
 <head>
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Encoding usado na página. -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ODS 7 - Formulário</title>
+    <title>ODS 7 - Formulário</title> <!-- Titulo da página. -->
 
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form.css"> <!-- Arquivo CSS que é usado na página. -->
 
-    <link rel="icon" href="images/raio.png" type="image/x-icon">
+    <link rel="icon" href="images/raio.png" type="image/x-icon"> <!-- Ícone do site. --><!-- Ícone do site. -->
 
 </head>
 
 <body>
 
-    <header> <!-- Cabeçalho, 2 imagens e menu inicial-->
+    <header> <!-- Cabeçalho, 2 imagens e menu inicial. -->
 
-        <div class="centraliza">
+        <nav> <!-- Menu com as opcões do header. -->
 
-            <nav>
+            <ul> <!-- Criando a lista das opções. -->
 
-                <ul>
+                <li> <!-- Opção de início. -->
 
-                    <li>
+                    <a href="index.html" class="botao"> Início </a>
 
-                        <a href="index.html" class="botao"> Início </a>
+                </li>
 
-                    </li>
+                <li> <!-- Opção de formulário. -->
 
-                    <li>
+                    <a href="form.html" class="botao"> Formulário </a>
 
-                        <a href="form.html" class="botao"> Formulário</a>
+                </li>
 
-                    </li>
+                <li> <!-- Opção de energias. -->
 
-                    <li>
+                    <a href="energias.html" class="botao"> Energias </a>
 
-                        <a href="energias.html" class="botao"> Energias </a>
+                </li>
 
-                    </li>
+                <li> <!-- Opção de desenvolvedores. -->
 
-                    <li>
+                    <a href="desenvolvedores.html" class="botao"> Devs. </a>
 
-                        <a href="desenvolvedores.html" class="botao"> Devs. </a>
+                </li>
 
-                    </li>
+            </ul>
 
-                </ul>
-
-            </nav>
-
-        </div>
+        </nav>
 
     </header>
 
     <!-- Formulário de preenchimento -->
     <main>
 
-        <div class="centraliza">
-            
-            <h1>Formulário</h1>
+        <h1>Formulário</h1>
 
-            <label for="nome">Nome:</label>
+        <label for="nome">Nome:</label>
 
-            <input id="nome" type="text">
+        <input id="nome" type="text">
 
-            <label>Telefone:</label>
+        <label>Telefone:</label>
 
-            <input type="tel">
+        <input type="tel">
 
-            <label>E-mail:</label>
+        <label>E-mail:</label>
 
-            <input type="email">
+        <input type="email">
 
-            <label>Idade:</label>
+        <label>Idade:</label>
 
-            <input type="number">
+        <input type="number">
 
-            <label>Instituição que estuda:</label>
+        <label>Instituição que estuda:</label>
 
-            <input type="text">
+        <input type="text">
 
-            <br>
+        <br>
 
-            <h3>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</h3>
+        <h3>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</h3>
 
-            <a href="https://www.ipea.gov.br/ods/ods7.html"  id="submeter" target="_blank">Submeter</a>
-
-        </div>
+        <a href="https://www.ipea.gov.br/ods/ods7.html" id="submeter" target="_blank">Submeter</a>
 
     </main>
-    
+
     <!-- Rodapé -->
     <footer>
 
-        <div class="centraliza">
+        <h3>@Copyright2023</h3>
 
-            <h3>@Copyright2023</h3>
-
-            <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"><img id="github" src="images/github.png" width="30" height="30" alt="GitHub"></a>
-
-        </div>
+        <a href="https://github.com/eu-micaeu/FrontEnd-ODS-7"><img id="github" src="images/github.png" width="30"
+                height="30" alt="GitHub"></a>
 
     </footer>
 
