@@ -1,6 +1,6 @@
 @import url('./global.css');
 
-main form{
+form{
 
     display: flex;
 
@@ -12,17 +12,17 @@ main form{
     
 }
 
-main form label{
+label{
 
     font-size: 25px;
 
-    margin: 10px;
+    margin: 20px;
 
     font-weight: bold;
 
 }
 
-main form input{
+input{
 
     padding: 10px;
 
@@ -36,32 +36,4 @@ main form input{
 
     text-align: center;
 
-}
-
-#submeter{
-
-    margin: 20px;
-
-    padding: 20px;
-
-    border: 2px solid white;
-
-    background-color: black;
-
-    text-decoration: none;
-
-    font-size: 15px;
-
-    color: white;
-
-    border-radius: 15px;
-
-}
-
-#submeter:hover{
-
-    color: rgb(0, 0, 0);
-
-    background-color: white;
-    
 }

@@ -20,7 +20,7 @@ header {
 
     border-radius: 0 0 10px 10px; /* Definindo uma borda arredondada para o header. */
 
-    border-bottom: 2px solid white; /* Definindo uma borda, tipo, grossura e cor. */
+    border-bottom: 2px solid white; /* Definindo uma borda de baixo, tipo, grossura e cor. */
 
     width: 100%; /* Definindo o comprimento do header. */
 
@@ -58,7 +58,7 @@ header li {
 
 }
 
-header a { 
+header a , form a{ 
 
     display: flex; /* Deixando a tag <a> com o display flexivél. */
 
@@ -72,6 +72,8 @@ header a {
 
     color: white; /* Definindo a cor da font. */
 
+    background-color: black; /* Definindo a cor preta para o background de determinadas tags <a>. */
+
     width: 18vw; /* Definindo o comprimento da tag <a>. */
 
     height: 50px; /* Definindo a altura da tag <a>. */
@@ -84,7 +86,7 @@ header a {
 
 }
 
-header a:hover{
+header a:hover, form a:hover{
 
     background-color: white; /* Definindo a cor de fundo das tags <a> quando passar o mouse por cima. */
 
@@ -103,6 +105,14 @@ main{
     justify-content: center; /* Alinhando de forma vertical, os itens da tag <main>. */
 
     flex-direction: column; /* Definindo uma direção de coluna da tag <main>. */
+}
+
+main img{
+
+    border-radius: 10px; /* Deixando as bordas arrendondadas das imagens dentro da tag <main>. */
+
+    border: 2px solid black; /* Definindo uma borda com o tipo, grossura e cor. */
+
 }
 
 p {
