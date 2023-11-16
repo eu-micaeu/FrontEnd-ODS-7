@@ -82,9 +82,31 @@
 
             <p>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</p> <!-- Parágrafo -->
 
-            <a href="https://www.ipea.gov.br/ods/ods7.html" target="_blank" onclick="incluirDados()">Submeter</a> <!-- Link para a página oficial da ODS7. -->
+            <a onclick="incluirDados()">Submeter</a> <!-- Link para a página oficial da ODS7. -->
 
-            <a id="btExcluir" onclick="apagarDados()">Excluir Dados</a> <!--  -->
+            <h2>Lista de usuários:</h2>
+
+            <ul id="lista">
+
+            </ul>
+
+            <label for="pesquisa">Pesquisa de usuários:</label>
+
+            <input type="text" id="campoDePesquisa">
+
+            <ul id="listaDaPesquisa">
+
+            </ul>
+
+            <a id="btPesquisar" onclick="pesquisarCampo()">Pesquisar Dados</a>
+
+            <label for="pesquisa">Exluir um usuário pelo ID:</label>
+
+            <input type="text" id="excluirUmUsuarioPeloID">
+
+            <a id="btExcluirUm" onclick="excluirTodosUsuarios()">Excluir Um Usuário</a>
+
+            <a id="btExcluirTodos" onclick="excluirTodosUsuarios()">Excluir Todos os Usuários</a>
 
         </form>
 
