@@ -82,15 +82,21 @@
 
             <p>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</p> <!-- Parágrafo -->
 
-            <a onclick="incluirDados()">Submeter</a> <!-- Link para a página oficial da ODS7. -->
+            <a onclick="incluirDados()" href="https://www.ipea.gov.br/ods/ods7.html" target="_blank">Submeter</a> <!-- Link para a página oficial da ODS7. -->
 
-            <h2>Lista de usuários:</h2>
+            <br>
+
+            <hr class="linhaDeBloco">
+
+            <h2>Lista de usuários que preencheram o formulário:</h2>
 
             <ul id="lista">
 
             </ul>
 
-            <label for="pesquisa">Pesquisa de usuários:</label>
+            <hr class="linhaDeBloco">
+
+            <label for="pesquisa">Pesquisa de usuários por ID:</label>
 
             <input type="text" id="campoDePesquisa">
 
@@ -98,13 +104,23 @@
 
             </ul>
 
-            <a id="btPesquisar" onclick="pesquisarCampo()">Pesquisar Dados</a>
+            <a id="btPesquisar" onclick="pesquisarPorID()">Pesquisar Usuário</a>
+
+            <hr class="linhaDeBloco">
 
             <label for="pesquisa">Exluir um usuário pelo ID:</label>
 
             <input type="text" id="excluirUmUsuarioPeloID">
 
-            <a id="btExcluirUm" onclick="excluirTodosUsuarios()">Excluir Um Usuário</a>
+            <br>
+
+            <a id="btExcluirUm" onclick="excluirUmUsuario()">Excluir Um Usuário</a>
+
+            <br>
+
+            <hr class="linhaDeBloco">
+
+            <br>
 
             <a id="btExcluirTodos" onclick="excluirTodosUsuarios()">Excluir Todos os Usuários</a>
 

@@ -36,37 +36,33 @@ function incluirDados(){
 }
 
 // 2. Função adequada para excluir um item da lista e do local storage.
+function excluirUmUsuario() {
 
-function excluirUsuario() {
+    var id = document.getElementById("excluirUmUsuarioPeloID").value;
 
-    id = document.getElementById("excluirUmUsuarioPeloID").value;
+    var index = usuarios.findIndex(function(usuario) {
 
-    usuarios = usuarios.filter(function(usuario) {
-
-        return usuario[0] !== id;
-
-    });
-
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-    lista = document.getElementById("lista");
-
-    lista.innerHTML = "";
-
-    usuarios.forEach(function(usuario) {
-
-        var li = document.createElement("li");
-
-        li.textContent = "ID: " + usuario[0] + " | Nome: " + usuario[1] + " | E-mail: " + usuario[2] + " | Telefone: " + usuario[3] + " | Idade: " + usuario[4] + " | Instituição: " + usuario[5];
-
-        lista.appendChild(li);
+        return usuario[0] == id;
 
     });
+
+    if (index !== -1) {
+
+        usuarios.splice(index, 1);
+
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+        lista = document.getElementById("lista");
+
+        lista.removeChild(lista.childNodes[index]);
+
+        recarregarLista();
+
+    }
 
 }
 
 // 3. Função adequada para excluir todos os itens da lista e do local storage.
-
 function excluirTodosUsuarios(){
 
     localStorage.clear();
@@ -77,14 +73,38 @@ function excluirTodosUsuarios(){
 
     lista = document.getElementById("lista");
 
-    lista.innerHTML = "";
+    recarregarLista();
 
 }
 
 // 4. Função adequada para pesquisar um campo do formulário.
+function pesquisarPorID(){
+
+    var campoDePesquisa = document.getElementById('campoDePesquisa');
+
+    var listaDaPesquisa = document.getElementById('listaDaPesquisa');
+
+    var id = campoDePesquisa.value;
+
+    listaDaPesquisa.innerHTML = "";
+
+    usuarios.forEach(function(usuario) {
+
+        var li = document.createElement("li");
+
+        if(usuario[0] == id){
+
+            li.textContent = "ID: " + usuario[0] + " | Nome: " + usuario[1] + " | E-mail: " + usuario[2] + " | Telefone: " + usuario[3] + " | Idade: " + usuario[4] + " | Instituição: " + usuario[5];
+
+        }
+
+        listaDaPesquisa.appendChild(li);
+
+    });
+
+}
 
 // 5. Função adequada para limpar os campos do formulário.
-
 function limparCampos() {
 
     document.getElementById("nome").value = "";
@@ -100,3 +120,21 @@ function limparCampos() {
 }
 
 // Funções extras:
+function recarregarLista() {
+
+    var lista = document.getElementById('lista');
+
+    lista.innerHTML = "";
+
+    usuarios.forEach(function(usuario) {
+
+        var li = document.createElement("li");
+
+        li.textContent = "ID: " + usuario[0] + " | Nome: " + usuario[1] + " | E-mail: " + usuario[2] + " | Telefone: " + usuario[3] + " | Idade: " + usuario[4] + " | Instituição: " + usuario[5];
+        
+        listaDeUsuarios.appendChild(li);
+
+    });
+
+}
+
