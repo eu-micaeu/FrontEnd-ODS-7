@@ -82,7 +82,9 @@
 
             <p>Submeta o formulário e já seja redirecionado para a página oficial da ODS 7.</p> <!-- Parágrafo -->
 
-            <a href="https://www.ipea.gov.br/ods/ods7.html" target="_blank">Submeter</a> <!-- Link para a página oficial da ODS7. -->
+            <a href="https://www.ipea.gov.br/ods/ods7.html" target="_blank" onclick="incluirDados()">Submeter</a> <!-- Link para a página oficial da ODS7. -->
+
+            <a id="btExcluir" onclick="apagarDados()">Excluir Dados</a> <!--  -->
 
         </form>
 
@@ -99,6 +101,8 @@
         </a>
 
     </footer>
+
+    <script src="js/form.js"></script>
 
 </body>
 

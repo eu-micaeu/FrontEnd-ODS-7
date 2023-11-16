@@ -37,3 +37,15 @@ input{
     text-align: center;
 
 }
+
+#btExcluir {
+
+    background-color: red;
+
+}
+
+#btExcluir:hover{
+
+    background-color: white;
+
+}
