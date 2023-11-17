@@ -37,28 +37,24 @@ function incluirDados(){
 
 // 2. Função adequada para excluir um item da lista e do local storage.
 function excluirUmUsuario() {
-
+    
     var id = document.getElementById("excluirUmUsuarioPeloID").value;
 
-    var index = usuarios.findIndex(function(usuario) {
+    var usuarioFiltrado = usuarios.find(function(usuario) {
 
         return usuario[0] == id;
 
     });
 
-    if (index !== -1) {
+    var index = usuarios.indexOf(usuarioFiltrado);
 
-        usuarios.splice(index, 1);
+    usuarios.splice(index, 1);
 
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-        lista = document.getElementById("lista");
+    recarregarLista();
 
-        lista.removeChild(lista.childNodes[index]);
-
-        recarregarLista();
-
-    }
+    limparExcluirUmUsuario();
 
 }
 
@@ -78,31 +74,27 @@ function excluirTodosUsuarios(){
 }
 
 // 4. Função adequada para pesquisar um campo do formulário.
-function pesquisarPorID(){
+function pesquisarPorNome() {
+    var nomePesquisado = document.getElementById("nomePesquisado").value;
 
-    var campoDePesquisa = document.getElementById('campoDePesquisa');
+    var lista = document.getElementById("lista");
 
-    var listaDaPesquisa = document.getElementById('listaDaPesquisa');
-
-    var id = campoDePesquisa.value;
-
-    listaDaPesquisa.innerHTML = "";
+    lista.innerHTML = "";
 
     usuarios.forEach(function(usuario) {
 
-        var li = document.createElement("li");
+        if (usuario[1].toLowerCase().includes(nomePesquisado.toLowerCase())) {
 
-        if(usuario[0] == id){
+            var li = document.createElement("li");
 
             li.textContent = "ID: " + usuario[0] + " | Nome: " + usuario[1] + " | E-mail: " + usuario[2] + " | Telefone: " + usuario[3] + " | Idade: " + usuario[4] + " | Instituição: " + usuario[5];
 
+            lista.appendChild(li);
+
         }
-
-        listaDaPesquisa.appendChild(li);
-
     });
-
 }
+
 
 // 5. Função adequada para limpar os campos do formulário.
 function limparCampos() {
@@ -131,10 +123,15 @@ function recarregarLista() {
         var li = document.createElement("li");
 
         li.textContent = "ID: " + usuario[0] + " | Nome: " + usuario[1] + " | E-mail: " + usuario[2] + " | Telefone: " + usuario[3] + " | Idade: " + usuario[4] + " | Instituição: " + usuario[5];
-        
-        listaDeUsuarios.appendChild(li);
+
+        lista.appendChild(li);
 
     });
 
 }
 
+function limparExcluirUmUsuario() {
+
+    document.getElementById("excluirUmUsuarioPeloID").value = "";
+
+}

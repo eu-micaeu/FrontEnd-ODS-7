@@ -38,13 +38,13 @@ input{
 
 }
 
-#btExcluirTodos, #btExcluirUm {
+#btExcluirTodos, #btExcluirUm, #btLimparFormulario{
 
     background-color: red;
 
 }
 
-#btExcluirTodos:hover, #btExcluirUm:hover{
+#btExcluirTodos:hover, #btExcluirUm:hover, #btLimparFormulario:hover{
 
     background-color: white;
 
