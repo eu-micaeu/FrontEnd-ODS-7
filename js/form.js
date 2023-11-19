@@ -5,6 +5,14 @@ var id = 0;
 // 1. Função adequada para incluir dados do formulário em uma lista e no local storage.
 function incluirDados(){
 
+    var date = new Date();
+
+    var dia = date.getDate();
+
+    var mes = date.getMonth() + 1;
+
+    var ano = date.getFullYear();
+
     id++;
 
     var nome = document.getElementById("nome").value;
@@ -17,7 +25,7 @@ function incluirDados(){
 
     var instituicao = document.getElementById("instituicao").value;
 
-    var usuario = [id, nome, email, telefone, idade, instituicao];
+    var usuario = [id, nome, email, telefone, idade, instituicao, date];
 
     usuarios.push(usuario);
 
@@ -27,7 +35,7 @@ function incluirDados(){
 
     var li = document.createElement("li");
 
-    li.textContent = "ID: " + id + " | Nome: " + nome + " | E-mail: " + email + " | Telefone: " + telefone + " | Idade: " + idade + " | Instituição: " + instituicao;
+    li.textContent = "Data de Envio: " + date.toLocaleDateString() /* Convertendo a */ + " | ID: " + id + " | Nome: " + nome + " | E-mail: " + email + " | Telefone: " + telefone + " | Idade: " + idade + " | Instituição: " + instituicao;
 
     lista.appendChild(li);
 
